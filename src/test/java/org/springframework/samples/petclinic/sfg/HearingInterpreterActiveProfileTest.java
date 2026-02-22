@@ -13,6 +13,8 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 @ActiveProfiles("yanny")
 @SpringJUnitConfig(classes = {HearingInterpreterActiveProfileTest.TestConfig.class})
 public class HearingInterpreterActiveProfileTest {
+
+    @Profile("yanny")
     @Configuration
     @ComponentScan("org.springframework.samples.petclinic.sfg")
     static class TestConfig {}
